@@ -12,3 +12,5 @@
 */
 
 Route::get('/status', array('uses' =>'StatusController@index'));
+Route::post('/status', array('uses' =>'StatusController@add'));
+Route::put('/status/{id}', array('uses' =>'StatusController@edit'));

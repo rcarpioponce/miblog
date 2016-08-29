@@ -8,4 +8,10 @@ class StatusController extends Controller {
 	public function index(){
 		return $this->statusRepo->index();
 	}
+	public function add(){
+		return $this->statusRepo->add();
+	}
+	public function edit($id){
+		return $this->statusRepo->edit($id);
+	}	
 }
